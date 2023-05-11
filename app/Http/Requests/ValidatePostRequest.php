@@ -23,8 +23,16 @@ class ValidatePostRequest extends FormRequest
   {
     return [
       'title' => 'required|min:3|max:255',
-      'description' => 'min:3|max:300',
+      'description' => 'min:3|max:300|nullable',
       'author' => 'required|min:3|max:255'
+    ];
+  }
+
+  public function messages():array {
+    return [
+      'title' => 'invalid title',
+      'description' => 'invalid description',
+      'author' => 'invalid author'
     ];
   }
 }

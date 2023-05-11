@@ -1,6 +1,9 @@
 .content {
   margin-top: 2em;
   color: rgb(255, 255, 255);
+  padding: 0.4em 0.8em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .content_title {
@@ -14,4 +17,62 @@
   font-weight: 400;
   margin-bottom: 1.3em;
   color: rgb(199, 199, 199);
+}
+
+.content_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_message {
+  color: rgb(25, 146, 245);
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+
+.content_error {
+  color: rgb(230, 25, 25);
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+
+.label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.input {
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em;
+  background-color: rgb(65, 64, 64);
+  color: rgb(255, 255, 255);
+}
+
+.input:focus-visible {
+  outline: 2px rgb(24, 24, 24) solid;
+}
+
+.form_btn {
+  width: fit-content;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: rgb(20, 211, 116);
+  cursor: pointer;
+  border-radius: 0.3em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.form_btn:hover {
+  background-color: rgb(18, 173, 95);
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
