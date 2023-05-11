@@ -1,0 +1,25 @@
+.index_container {
+  color: rgb(255, 255, 255);
+  margin-top: 2em;
+}
+
+.main {
+  padding-bottom: 3em;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.main_num {
+  text-align: center;
+  font-style: italic;
+  color: rgb(228, 227, 227);
+}
+
+.main_posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
