@@ -51,7 +51,7 @@
 }
 
 .input:focus-visible {
-  outline: 2px rgb(24, 24, 24) solid;
+  outline: 2px rgba(47, 104, 179, 0.774) solid;
 }
 
 .form_btn {
@@ -68,6 +68,22 @@
 
 .form_btn:hover {
   background-color: rgb(18, 173, 95);
+}
+
+.form_btn-edit {
+  width: fit-content;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: rgb(20, 173, 211);
+  cursor: pointer;
+  border-radius: 0.3em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.form_btn-edit:hover {
+  background-color: rgb(16, 138, 168);
 }
 
 @media (min-width: 768px) {

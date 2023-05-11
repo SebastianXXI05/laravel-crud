@@ -3,7 +3,7 @@
 @section('title', 'Create Post')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/posts/create.css') }}">
+<link rel="stylesheet" href="{{ asset('css/posts/form.css') }}">
 @endsection
 
 @section('content')
