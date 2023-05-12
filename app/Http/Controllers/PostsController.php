@@ -60,9 +60,14 @@ class PostsController extends Controller
   /**
    * Update the specified resource in storage.
    */
-  public function update(Request $request, string $id)
-  {
-    //
+  public function update(ValidatePostRequest $request, $id) {
+    $post = Post::find($id);
+    $post->title = $request->title;
+    $post->description = $request->description;
+    $post->author = $request->author;
+    $post->save();
+
+    return redirect()->route('post.index')->with('success', 'A post updated');
   }
 
   /**

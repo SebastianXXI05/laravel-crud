@@ -13,6 +13,7 @@
 
   <form action="{{ route('post.update', ['post' => $post->id]) }}" method="post" class="content_form">
     @csrf
+    @method('PUT')
 
     @if (session('success'))
       <h6 class="content_message">
