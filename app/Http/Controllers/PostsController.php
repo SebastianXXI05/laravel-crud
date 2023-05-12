@@ -52,9 +52,9 @@ class PostsController extends Controller
    * Show the form for editing the specified resource.
    */
   public function edit($uuid) {
-    
+    $post = Post::where('uuid', $uuid)->get()[0];
 
-
+    return view('post.edit', ['post' => $post]);
   }
 
   /**

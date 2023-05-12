@@ -1,9 +1,8 @@
 .content {
-  margin-top: 2em;
   color: rgb(255, 255, 255);
   padding: 0.4em 0.8em;
   width: 90%;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .content_title {
