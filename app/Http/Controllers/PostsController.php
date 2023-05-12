@@ -45,15 +45,16 @@ class PostsController extends Controller
   public function show($uuid) {
     $post = Post::searchUuid($uuid);
 
-    
+    return view('post.show', ['post' => $post]);
   }
 
   /**
    * Show the form for editing the specified resource.
    */
-  public function edit(string $id)
-  {
-    //
+  public function edit($uuid) {
+    
+
+
   }
 
   /**

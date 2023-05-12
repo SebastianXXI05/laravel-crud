@@ -20,6 +20,6 @@ class Post extends Model {
   }
 
   public static function searchUuid($uuid) {
-    return self::where('uuid', '=', $uuid);
+    return self::where('uuid', $uuid)->get()[0];
   }
 }
