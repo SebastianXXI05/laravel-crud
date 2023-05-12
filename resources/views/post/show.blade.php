@@ -16,7 +16,9 @@
     </header>
     <p class="content_paragraph">{{ $post->description }}</p>
 
-    <form action="route('post.destroy', ['post' => $post->id])" method="post" class="content_buttons">
+    <form action="{{ route('post.destroy', ['post' => $post->id]) }}"
+     method="post" 
+     class="content_buttons">
       @csrf
       @method('DELETE')
       <a class="btn" href="{{ route('post.edit', ['post' => $post->uuid]) }}">Edit</a>
